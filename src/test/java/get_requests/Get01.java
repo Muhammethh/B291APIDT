@@ -7,6 +7,9 @@ import static io.restassured.RestAssured.*;
 
 public class Get01 {
 
+    //Api görevi : clientdan aldığı requesti databasee yollar ve databaseden aldığı responseu clienta geri döndürür
+
+
         /*
      Given
          https://petstore.swagger.io/v2/pet/5

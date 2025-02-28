@@ -72,7 +72,7 @@ public class Get02 {
         ;
 
 
-        //not --->  response.asString() methodu responsun body kısmını stringe dönüştürür
+        //note --->  response.asString() methodu responsun body kısmını stringe dönüştürür
         Assert.assertTrue(response.asString().contains("Pet not found"));
         Assert.assertFalse(response.asString().contains("TechProEd"));
 
