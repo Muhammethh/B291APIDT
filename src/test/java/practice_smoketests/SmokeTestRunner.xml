@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API SMOKE TEST">
+
+
+    <test verbose="2" preserve-order="true"
+          name="CRUD OPERATIONS">
+
+        <classes>
+            <class name="practice_smoketests.CreateBooking"></class>
+            <class name="practice_smoketests.GetBooking"></class>
+            <class name="practice_smoketests.UpdateBooking"></class>
+            <class name="practice_smoketests.PartiallyUpdateBooking"></class>
+            <class name="practice_smoketests.DeleteBooking"></class>
+        </classes>
+
+
+    </test>
+</suite>

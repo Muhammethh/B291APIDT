@@ -1,0 +1,43 @@
+package post_requests;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Silinecek {
+
+
+    public static void main(String[] args) {
+
+        System.out.println("LocalDate.now() = " + LocalDate.now().minusDays(8).until(LocalDate.now()));
+
+        LocalDate today = LocalDate.now();
+        LocalDate eightDaysAgo = today.minusDays(7);
+
+        List<LocalDate> dates = new ArrayList<>();
+        for (LocalDate date = eightDaysAgo; !date.isAfter(today); date = date.plusDays(1)) {
+            dates.add(date);
+        }
+
+        System.out.println(dates);
+        System.out.println("dates.get(0) = " + dates.get(1));
+
+        System.out.println("getDates().get(3) = " + getDates().get(3));
+
+
+    }
+
+    public static List<LocalDate> get7DaysBeforeToday() {
+
+        LocalDate today = LocalDate.now();
+        LocalDate eightDaysAgo = today.minusDays(7);
+
+        List<LocalDate> dates = new ArrayList<>();
+        for (LocalDate date = eightDaysAgo; !date.isAfter(today); date = date.plusDays(1)) {
+            dates.add(date);
+        }
+        return dates;
+    }
+
+
+}
